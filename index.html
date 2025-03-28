@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equality vs Equity Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home-page">
+            <h1>Equality vs Equity Game</h1>
+            <div class="intro-container">
+                <div class="intro-section">
+                    <h2>How to Play</h2>
+                    <ol>
+                        <li>Read each scenario carefully</li>
+                        <li>Decide if the scenario demonstrates equality or equity</li>
+                        <li>Click the corresponding button to answer</li>
+                        <li>Learn from the feedback and continue to the next scenario</li>
+                        <li>Answer within the time limit to score points</li>
+                        <li>Build streaks and earn badges as you play!</li>
+                    </ol>
+                </div>
+                <div class="intro-section">
+                    <h2>Understanding the Concepts</h2>
+                    <div class="concept-box">
+                        <h3>Equality</h3>
+                        <p>Equality means treating everyone the <strong>same way</strong> regardless of their individual circumstances, needs, or abilities.</p>
+                        <div class="example">Example: Everyone gets the same size shoes regardless of their foot size.</div>
+                    </div>
+                    <div class="concept-box">
+                        <h3>Equity</h3>
+                        <p>Equity means providing resources and opportunities based on individual <strong>needs</strong> to create fair outcomes for everyone.</p>
+                        <div class="example">Example: Everyone gets shoes that fit their specific foot size.</div>
+                    </div>
+                </div>
+                <div class="intro-visual">
+                    <svg width="100%" height="200" viewBox="0 0 600 200">
+                        <!-- Equality Illustration -->
+                        <g transform="translate(50, 20)">
+                            <text x="100" y="15" text-anchor="middle" font-weight="bold">Equality</text>
+                            <rect x="70" y="30" width="60" height="20" fill="#3498db"/>
+                            <rect x="70" y="60" width="60" height="20" fill="#3498db"/>
+                            <rect x="70" y="90" width="60" height="20" fill="#3498db"/>
+                            
+                            <!-- People -->
+                            <circle cx="50" cy="40" r="10" fill="#333"/>
+                            <line x1="50" y1="50" x2="50" y2="80" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="60" x2="40" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="60" x2="60" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="80" x2="40" y2="100" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="80" x2="60" y2="100" stroke="#333" stroke-width="2"/>
+                            
+                            <circle cx="50" cy="70" r="15" fill="#333" opacity="0.2"/>
+                            
+                            <circle cx="50" cy="100" r="10" fill="#333"/>
+                            <line x1="50" y1="110" x2="50" y2="140" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="120" x2="40" y2="130" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="120" x2="60" y2="130" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="140" x2="40" y2="160" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="140" x2="60" y2="160" stroke="#333" stroke-width="2"/>
+                            
+                            <circle cx="150" cy="40" r="10" fill="#333"/>
+                            <line x1="150" y1="50" x2="150" y2="80" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="60" x2="140" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="60" x2="160" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="80" x2="140" y2="100" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="80" x2="160" y2="100" stroke="#333" stroke-width="2"/>
+                        </g>
+                        
+                        <!-- Equity Illustration -->
+                        <g transform="translate(300, 20)">
+                            <text x="100" y="15" text-anchor="middle" font-weight="bold">Equity</text>
+                            <rect x="70" y="30" width="60" height="40" fill="#2ecc71"/>
+                            <rect x="70" y="80" width="60" height="20" fill="#2ecc71"/>
+                            <rect x="70" y="110" width="60" height="10" fill="#2ecc71"/>
+                            
+                            <!-- People -->
+                            <circle cx="50" cy="40" r="10" fill="#333"/>
+                            <line x1="50" y1="50" x2="50" y2="80" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="60" x2="40" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="60" x2="60" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="80" x2="40" y2="100" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="80" x2="60" y2="100" stroke="#333" stroke-width="2"/>
+                            
+                            <circle cx="50" cy="70" r="15" fill="#333" opacity="0.2"/>
+                            
+                            <circle cx="50" cy="100" r="10" fill="#333"/>
+                            <line x1="50" y1="110" x2="50" y2="140" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="120" x2="40" y2="130" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="120" x2="60" y2="130" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="140" x2="40" y2="160" stroke="#333" stroke-width="2"/>
+                            <line x1="50" y1="140" x2="60" y2="160" stroke="#333" stroke-width="2"/>
+                            
+                            <circle cx="150" cy="40" r="10" fill="#333"/>
+                            <line x1="150" y1="50" x2="150" y2="80" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="60" x2="140" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="60" x2="160" y2="70" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="80" x2="140" y2="100" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="80" x2="160" y2="100" stroke="#333" stroke-width="2"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <button id="start-game-btn" class="start-btn">Start Game</button>
+        </div>
+
+        <div id="game-content" class="hidden">
+            <header>
+                <h1>Equality vs Equity <span class="level-indicator" id="level-display">Level 1: Novice</span></h1>
+                <div class="score-container">
+                    <span>Score: <span id="score">0</span></span>
+                    <span>High Score: <span id="high-score">0</span></span>
+                </div>
+            </header>
+
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-value" id="streak-display">0</span>
+                    <span class="stat-label">Current Streak</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="best-streak-display">0</span>
+                    <span class="stat-label">Best Streak</span>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div class="game-container">
+                <div class="time-bar-container">
+                    <div class="time-bar" id="time-bar"></div>
+                </div>
+                
+                <div id="scenario-container">
+                    <p id="scenario-text"></p>
+                </div>
+
+                <div class="buttons-container">
+                    <button id="equality-btn">Equality</button>
+                    <button id="equity-btn">Equity</button>
+                </div>
+
+                <div id="feedback" class="hidden">
+                    <p id="feedback-text"></p>
+                    <button id="next-btn">Next Scenario</button>
+                </div>
+            </div>
+
+            <div class="badges-container" id="badges-container">
+                <!-- Badges will be created by JavaScript -->
+            </div>
+
+            <div class="info-container">
+                <div class="info-box">
+                    <h3>Equality</h3>
+                    <p>Treating everyone the same regardless of their individual circumstances.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Equity</h3>
+                    <p>Providing resources based on individual needs to create fair outcomes for everyone.</p>
+                </div>
+            </div>
+
+            <div id="rewards-container" class="hidden">
+                <h2>Achievement Unlocked!</h2>
+                <div id="reward-icon">🏆</div>
+                <p id="reward-message"></p>
+                <button id="continue-btn">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="https://sites.google.com/view/aaronshi" target="_blank" class="footer-link">
+                <img src="https://alittlemoreenglish.weebly.com/uploads/2/6/6/3/26638990/favicon-32x32_orig.png" alt="Aaron Shi" class="footer-icon">
+            </a>
+            <span class="footer-text">Released in April 2025. Created by Aaron Shi.</span>
+        </div>
+    </footer>
+
+    <div class="streak-counter" id="streak-counter">2x Streak!</div>
+
+    <script type="module" src="config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
