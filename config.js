@@ -1,4 +1,44 @@
 export const scenarios = [
+  {
+    "text": "A tech company pays both male and female software engineers with 5 years of experience $100,000 annually.",
+    "answer": "equality",
+    "explanation": "This scenario demonstrates the idea of equal pay for equal work."
+  },
+  {
+    "text": "Malala Fund works to secure 12 years of free, safe, quality education for all girls so they can learn and lead without fear, just like boys.",
+    "answer": "equality",
+    "explanation": "This situation illustrates girls' and women's right to education and is considered equality."
+  },
+  {
+    "text": "A national parliament has a quota system that mandates at least 30% female representation in all elected positions.",
+    "answer": "equity",
+    "explanation": "This policy aims to address historical and systemic underrepresentation of women in politics. By implementing a quota, it actively seeks to ensure a more equitable distribution of power and decision-making roles, promoting women's political participation."
+  },
+  {
+    "text": "A construction company pays all workers on a site the same hourly wage, regardless of their specific role or experience.",
+    "answer": "equality",
+    "explanation": "This is equality in the sense that everyone gets the same wage."
+  },
+    {
+      "text": "A company provides childcare subsidies specifically for single mothers, recognizing the unique financial burdens they face.",
+      "answer": "equity",
+      "explanation": "While it doesn't provide the same benefit to everyone, it is equitable. It provides additional support to a group that has additional burdens in order to create a more level playing field."
+    },
+    {
+      "text": "A law firm promotes partners based solely on years of service, without considering performance or individual contributions.",
+      "answer": "equality",
+      "explanation": "This is equal in that everyone is promoted based on the same metric."
+    },
+    {
+      "text": "A school provides the same textbooks and learning materials to all students, regardless of their individual learning needs.",
+      "answer": "equality",
+      "explanation": "Everyone receives the same materials."
+    },
+    {
+      "text": "A city provides extra funding to schools in low-income neighborhoods to ensure they have adequate resources.",
+      "answer": "equity",
+      "explanation": "This provides additional resources to those who need it most, therefore, equity."
+    },
     {
         text: "In a classroom, all students are given the exact same textbook, regardless of their reading level or specific learning needs.",
         answer: "equality",
