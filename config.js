@@ -1,5 +1,10 @@
 export const scenarios = [
   {
+    "text": "The LGBTQ community is urging the government to legalize same-sex marriage.",
+    "answer": "equality",
+    "explanation": "This scenario shows that a different group of people are asking for the same right to marriage as heterosexual couples."
+  },
+  {
     "text": "A tech company pays both male and female software engineers with 5 years of experience $100,000 annually.",
     "answer": "equality",
     "explanation": "This scenario demonstrates the idea of equal pay for equal work."
